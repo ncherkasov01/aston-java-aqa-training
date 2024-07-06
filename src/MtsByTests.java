@@ -17,7 +17,8 @@ public class MtsByTests {
 
     @BeforeAll
     public static void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/Users/ncherkasov/Desktop/Selenium/Chromedriver/chromedriver-mac-arm64/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "resources/chromedriver");
+
         driver = new ChromeDriver();
         driver.get("http://mts.by");
         driver.findElement(By.id("cookie-agree")).click();
